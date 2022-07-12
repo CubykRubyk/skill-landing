@@ -100,7 +100,7 @@
 
 	&__image {
 		display: block;
-		content: url("/images/image-hero-desktop@2x.png");
+		content: url(#{$baseUrl}/image-hero-desktop@2x.png);
 		height: 937px;
 		width: 992px;
 		position: absolute;
@@ -110,7 +110,7 @@
 
 		@include mobile-only {
 			margin: 0 auto;
-			content: url("/images/image-hero-mobile@2x.png");
+			content: url(#{$baseUrl}/image-hero-mobile@2x.png);
 			position: relative;
 			max-height: 320px;
 			max-width: 320px;
@@ -121,7 +121,7 @@
 
 		@include tablet-only {
 			margin: 0 auto;
-			content: url("/images/image-hero-tablet@2x.png");
+			content: url(#{$baseUrl}/image-hero-tablet@2x.png);
 			position: relative;
 			height: 650px;
 			width: 650px;

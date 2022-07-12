@@ -21,7 +21,7 @@ $main-font: 'Plus Jakarta Sans', sans-serif;
 
 //*============OTHER
 
-
+//* container max width
 $max-width: 1440px;
 
 //* Breakpoints 
@@ -30,3 +30,7 @@ $breakpoints: (
 	'tablet': 767.98px,
 	'desktop': 1420px,
 	) !default;
+
+
+//* hosting base url
+$baseUrl : "/images";
