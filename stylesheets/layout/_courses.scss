@@ -1,0 +1,72 @@
+.courses {
+	display: flex;
+	margin: 35px 165px 0 165px;
+
+	@include mobile-only {
+		margin: 0 16px 80px 16px;
+	}
+
+	@include tablet-only {
+		margin: 0 40px 86px 40px;
+	}
+
+
+	&__row {
+		max-width: 1110px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 60px;
+
+		@include mobile-only {
+			flex-direction: row;
+			max-width: 288px;
+			margin-bottom: 0px;
+		}
+
+		@include tablet-only {
+			max-width: 690px;
+			margin-bottom: 0px;
+		}
+	}
+
+	&__course {
+		display: flex;
+		flex: 0 1 33.333%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+
+	&__card {
+		width: 350px;
+		height: 322px;
+		margin-bottom: 80px;
+
+		@include tablet-only {
+			width: 340px;
+			height: 260px;
+			margin-bottom: 56px;
+		}
+
+		@include mobile-only {
+			width: 288px;
+			height: 283px;
+			margin-bottom: 40px;
+		}
+
+		&:first-child {
+			@include tablet-only {
+				width: 340px;
+				height: 260px;
+				margin-bottom: 56px;
+			}
+
+			@include mobile-only {
+				width: 288px;
+				height: 120px;
+				margin-bottom: 40px;
+			}
+		}
+
+	}
+}

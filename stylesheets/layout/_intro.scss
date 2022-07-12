@@ -1,0 +1,138 @@
+.intro {
+
+	&__row {
+		margin: 0px 165px 0 165px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		@include mobile-only {
+			display: block;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		@include tablet-only {
+			margin: 0 auto;
+			width: 688px;
+			// margin: 0;
+			overflow: hidden;
+		}
+
+	}
+
+	&__data {
+		max-width: 50%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		padding-right: 100px;
+
+		@include mobile-only {
+			margin: 0 auto;
+			max-width: 288px;
+			display: block;
+			padding: 0 16px 0 16px;
+			align-items: center;
+		}
+
+		@include tablet-only {
+			// margin-left: 40px;
+		}
+	}
+
+	&__title {
+		padding-top: 120px;
+		font-family: 'Plus Jakarta Sans';
+		font-weight: 800;
+		font-size: 56px;
+		color: $dark-blue;
+		line-height: lineHeight(71, 56);
+
+		@include mobile-only {
+			font-size: 30px;
+			line-height: 50px;
+			padding: 38px 0 26px 0;
+		}
+
+		@include tablet-only {
+			font-size: 40px;
+			line-height: 50px;
+			padding-top: 85px;
+		}
+	}
+
+	&__text {
+		padding-top: 29px;
+		padding-bottom: 40px;
+		padding-right: 110px;
+		font-family: 'Plus Jakarta Sans';
+		color: $grey;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: lineHeight(28, 18);
+
+		@include tablet-only {
+			padding: 24px 0 24px 0;
+		}
+
+		@include mobile-only {
+			padding: 0 0 24px 0;
+			font-size: 16px;
+		}
+	}
+
+	&__button {
+		line-height: 56px;
+		padding-right: 31px;
+		padding-left: 31px;
+		margin-bottom: 180px;
+
+		@include mobile-only {
+			margin-bottom: 30px;
+			padding-right: 24px;
+			padding-left: 24px;
+			max-width: 110px;
+		}
+
+		@include tablet-only {
+			margin-bottom: 186px;
+			padding-right: 24px;
+			padding-left: 24px;
+		}
+	}
+
+	&__image {
+		display: block;
+		content: url("./../../images/image-hero-desktop@2x.png");
+		height: 937px;
+		width: 992px;
+		position: absolute;
+		overflow: hidden;
+		top: -265px;
+		right: -490px;
+
+		@include mobile-only {
+			margin: 0 auto;
+			content: url("./../../images/image-hero-mobile@2x.png");
+			position: relative;
+			max-height: 320px;
+			max-width: 320px;
+			top: 0;
+			right: 0;
+			object-fit: cover;
+		}
+
+		@include tablet-only {
+			margin: 0 auto;
+			content: url("./../../images/image-hero-tablet@2x.png");
+			position: relative;
+			height: 650px;
+			width: 650px;
+			position: absolute;
+			overflow: hidden;
+			top: -130px;
+			right: -280px;
+		}
+	}
+}

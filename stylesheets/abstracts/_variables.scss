@@ -1,0 +1,32 @@
+//* =======COLORS==========
+$light-blue: rgb(102, 108, 163);
+$dark-blue: rgb(19, 24, 63);
+$grey: rgb(131, 134, 154);
+$pink: rgb(247, 71, 128);
+$light-pink: rgb(255, 167, 195);
+$white: rgb(255, 255, 255);
+
+
+//* =======GRADIENTS==========
+
+$gradients: (
+	"gradient1" : linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%),
+	"gradient2" : linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%),
+	"card-gradient": linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%),
+	"bg-gradient": linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)
+);
+//* =========FONTS=============
+
+$main-font: 'Plus Jakarta Sans', sans-serif;
+
+//*============OTHER
+
+
+$max-width: 1440px;
+
+//* Breakpoints 
+$breakpoints: (
+	'mobile': 320px,
+	'tablet': 767.98px,
+	'desktop': 1420px,
+	) !default;

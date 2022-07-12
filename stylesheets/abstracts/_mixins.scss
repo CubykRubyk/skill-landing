@@ -1,0 +1,23 @@
+@mixin vertical-center {
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+
+//*===========Media Query===========
+
+@mixin mobile-only {
+	@media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet)) {
+		@content;
+	}
+}
+
+@mixin tablet-only {
+	@media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)) {
+		@content;
+	}
+}

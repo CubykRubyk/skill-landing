@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+@function pxToRem($value) {
+	$remValue: math.div($value , 16)+rem;
+	@return $remValue;
+}
+
+@function lineHeight($value, $value1) {
+	@return math.div($value, $value1);
+}

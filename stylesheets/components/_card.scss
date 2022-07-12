@@ -1,0 +1,116 @@
+.card {
+	background-color: white;
+	box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+	border-radius: 15px;
+	position: relative;
+
+	&__title {
+		font-family: 'Plus Jakarta Sans';
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 30px;
+		color: $dark-blue;
+		padding-left: 32px;
+		padding-top: 64px;
+
+		@include mobile-only {
+			padding-top: 56px;
+			font-size: 20px;
+			line-height: 25px;
+			// padding-left: 40px;
+		}
+
+		@include tablet-only {
+			font-size: 20px;
+			line-height: 25px;
+			padding-top: 56px;
+		}
+
+	}
+
+	&__text {
+		font-family: 'Plus Jakarta Sans';
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 28px;
+		color: $grey;
+		padding-right: 32px;
+		padding-left: 32px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+
+		@include mobile-only {
+			font-size: 16px;
+			line-height: 26px;
+			padding-top: 16px;
+			padding-right: 28px;
+			padding-left: 28px;
+		}
+
+		@include tablet-only {
+			font-size: 16px;
+			line-height: 26px;
+			padding-top: 16px;
+			padding-right: 32px;
+			padding-left: 22px;
+		}
+	}
+
+	&__link {
+		display: block;
+		font-family: 'Plus Jakarta Sans';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		color: rgba(247, 71, 128, 1);
+		padding-left: 32px;
+		margin-bottom: 40px;
+
+		@include mobile-only {
+			margin-bottom: 32px;
+		}
+
+		@include tablet-only {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__icon {
+		width: 56px;
+		height: 56px;
+		position: absolute;
+		top: -28px;
+		left: 32px;
+	}
+}
+
+
+.card-gradient {
+	background: map-get($gradients, "gradient1");
+
+}
+
+.title-gradient {
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 40px;
+	color: #fff;
+	max-width: 286px;
+
+	@include mobile-only {
+		font-size: 24px;
+		line-height: 32px;
+		padding-top: 24px;
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	@include tablet-only {
+		font-size: 24px;
+		line-height: 32px;
+		padding-top: 56px;
+		font-size: 24px;
+		line-height: 32px;
+	}
+}

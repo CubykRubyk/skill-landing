@@ -1,0 +1,42 @@
+.button {
+	display: block;
+	text-align: center;
+	border-radius: 28px;
+	background-color: $dark-blue;
+	font-weight: 700;
+	font-size: 18px;
+	color: white;
+	font-family: 'Plus Jakarta Sans';
+
+	@include mobile-only {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	@include tablet-only {
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+
+.header-button {
+	&:active {
+		background: rgba(102, 108, 163, 1);
+	}
+}
+
+.intro-button {
+	background: map-get($gradients, "gradient1");
+
+	&:active {
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+	}
+}
+
+.button-footer {
+	background: map-get($gradients, "gradient2");
+
+	&:active {
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+	}
+}

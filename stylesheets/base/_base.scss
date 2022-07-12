@@ -1,0 +1,17 @@
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+.container {
+	max-width: $max-width;
+	margin: 0px auto;
+}
+
+a {
+	text-decoration: none;
+	font-style: inherit;
+}

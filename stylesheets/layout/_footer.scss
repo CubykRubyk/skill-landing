@@ -1,0 +1,52 @@
+.footer {
+	background-color: $dark-blue;
+
+
+	&__row {
+		display: flex;
+		height: 120px;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 165px 0 165px;
+
+		@include mobile-only {
+			margin-left: 16px;
+			margin-right: 16px;
+			max-width: 320px;
+			margin: 0 auto;
+		}
+
+		@include tablet-only {
+			margin-left: 16px;
+			margin-right: 16px;
+			max-width: 690px;
+			margin: 0 auto;
+		}
+
+	}
+
+	&__logo {
+		@include tablet-only {
+			padding-left: 16px;
+		}
+
+		@include mobile-only {
+			padding-left: 16px;
+		}
+	}
+
+	&__button {
+		line-height: 56px;
+		padding-right: 31px;
+		padding-left: 31px;
+
+		@include tablet-only {
+			margin-right: 16px;
+		}
+
+		@include mobile-only {
+			margin-right: 16px;
+		}
+	}
+
+}
